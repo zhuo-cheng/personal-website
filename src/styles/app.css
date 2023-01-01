@@ -1,0 +1,58 @@
+:root {
+  --bg-color: #252525;
+  --text-color: #eaeaea;
+  --text-highlight-color: #f77550;
+  --company-highlight-color: #06c755;
+  --transition: 0.5s ease;
+  --z-above-content: 1;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: calc(12px + 0.3vw);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 1000px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+main {
+  text-align: center;
+  padding: 3em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin: 1em 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 2;
+}

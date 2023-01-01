@@ -1,0 +1,38 @@
+ul.links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+li.link {
+  flex: 0 1 3em;
+  margin: 0 1em;
+}
+
+li.link a {
+  display: inline-block;
+  position: relative;
+}
+
+li.link img {
+  width: 2.2em;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li.link span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li.link:hover img {
+  opacity: 0;
+}
+
+li.link:hover span {
+  opacity: 1;
+}
