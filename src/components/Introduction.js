@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import homepageImage from "../assets/homepage.jpg";
 import "../styles/introduction.css";
 
-const Intro = () => {
+const Introduction = () => {
   const ACTIVITIES = [
     {
       emoji: "🕹",
@@ -104,4 +104,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default Introduction;

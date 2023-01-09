@@ -1,6 +1,6 @@
 # Zhuo's Personal Website
 
-[zhuocheng.xyz](zhuocheng.xyz)
+[https://www.zhuocheng.xyz](https://www.zhuocheng.xyz)
 
 Built with [React.js](https://reactjs.org/) and CSS3.
 
