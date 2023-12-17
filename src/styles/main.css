@@ -1,8 +1,9 @@
 :root {
   --bg-color: #252525;
   --text-color: #eaeaea;
-  --text-highlight-color: #f77550;
-  --company-highlight-color: #06c755;
+  --text-highlight-color: #eaeaea;
+  --company-highlight-color-l: #06c755;
+  --company-highlight-color-y: #ff0033;
   --transition: 0.5s ease;
   --z-above-content: 1;
 }

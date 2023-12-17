@@ -7,25 +7,21 @@ const Introduction = () => {
     {
       emoji: "🕹",
       text: "play games",
-      detail: "Recently have been addicted to Splatoon 3 :p",
       animationAttr: "game",
     },
     {
       emoji: "🌀",
       text: "watch anime",
-      detail: "常盤台中の黒子ちゃん推し！",
       animationAttr: "swirl",
     },
     {
       emoji: "🎧",
       text: "listen to rap",
-      detail: "From English to Japanese ones, and Chinese for sure.",
       animationAttr: "headphone",
     },
     {
       emoji: "🚗",
       text: "enjoy trips",
-      detail: "From day-trip to week-long trip ~",
       animationAttr: "car",
     },
   ];
@@ -64,12 +60,12 @@ const Introduction = () => {
       <p>
         Software Engineer @{" "}
         <a
-          href="https://line.me/en"
+          href="https://www.lycorp.co.jp/ja/"
           target="_blank"
           rel="noreferrer noopener"
           className="highlight company-highlight"
         >
-          LINE
+          LINEヤフー
         </a>
       </p>
       <p>
@@ -95,7 +91,6 @@ const Introduction = () => {
               data-animation={activity.animationAttr}
             >
               {activity.text}
-              <span className="tooltip">{activity.detail}</span>
             </span>
           </React.Fragment>
         ))}

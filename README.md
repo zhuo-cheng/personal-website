@@ -19,19 +19,21 @@ $PROJECT_ROOT
 │   ├── styles
 ```
 
+
 ## Available Scripts
 
+In the project directory, you can run:
+
 ### npm install
-To install the dependencies.
+Installs the project dependencies.
 
 ### npm start
-To run the app in the development mode locally.
-The page will reload automatically if making any edits.
+Runs the app in the development mode locally. The page will reload automatically if you make any edits.
 
 ### npm run build / npm run predeploy
-To build the app for production to the `build` folder.
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 The build is minified and the filenames include the hashes.
 
 ### npm run deploy
-To manage and deploy the files under `build` folder to the `gh-pages` branch of the repository. 
+Manages and deploys the files under the `build` folder to the `gh-pages` branch of the repository. This branch is used by GitHub Pages to serve the website.

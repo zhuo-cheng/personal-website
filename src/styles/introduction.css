@@ -62,28 +62,28 @@
   content: "";
   position: absolute;
   z-index: -1;
-  top: 88%;
   left: -0.1em;
   right: -0.1em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.85, 0.8, 1);
-  background-color: var(--highlight-color);
-}
-
-.highlight:hover {
-  color: var(--bg-color);
-}
-
-.highlight:hover::after {
-  top: 0%;
 }
 
 .text-highlight::after {
+  top: 93%;
   background-color: var(--text-highlight-color);
 }
 
 .company-highlight::after {
-  background-color: var(--company-highlight-color);
+  top: 88%;
+  background: linear-gradient(to right, var(--company-highlight-color-l), var(--company-highlight-color-y));
+}
+
+.company-highlight:hover {
+  color: var(--bg-color);
+}
+
+.company-highlight:hover::after {
+  top: 0%;
 }
 
 .activity {
@@ -96,44 +96,14 @@
   background-size: 6px 1px;
   background-position: 0 100%;
   position: relative;
-  cursor: help;
+  cursor: grab;
   transition: background-size var(--transition);
   max-width: 85%;
-}
-
-.activity-hover-able .tooltip {
-  position: absolute;
-  font-size: 0.8em;
-  width: 30em;
-  color: var(--bg-color);
-  background: var(--text-color);
-  text-align: left;
-  bottom: 0;
-  padding: 4px 12px;
-  border-radius: 4px;
-  left: 50%;
-  transform: translate(-50%, 110%);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity var(--transition);
-  z-index: var(--z-above-content);
-  white-space: normal;
 }
 
 .activity-hover-able:hover {
   animation: dash-animation 15s infinite linear;
   background-size: 6px 2px;
-}
-
-.activity-hover-able:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-@media screen and (max-width: 1000px) {
-  .activity-hover-able:hover .tooltip {
-    max-width: 100%;
-  }
 }
 
 .activity-hover-able:hover::after {
@@ -144,12 +114,12 @@
 
 .activity-hover-able:hover[data-animation="game"]::after {
   animation-name: game-animation;
-  animation-duration: 0.8s;
+  animation-duration: 1s;
 }
 
 .activity-hover-able:hover[data-animation="swirl"]::after {
   animation-name: swirl-animation;
-  animation-duration: 1.5s;
+  animation-duration: 1.8s;
 }
 
 .activity-hover-able:hover[data-animation="headphone"]::after {
@@ -171,6 +141,7 @@
   0% {
     background-position: 0 100%;
   }
+
   100% {
     background-position: 100% 100%;
   }
@@ -180,21 +151,27 @@
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(-10deg);
   }
+
   20% {
     transform: rotate(12deg);
   }
+
   30% {
     transform: rotate(-10deg);
   }
+
   40% {
     transform: rotate(10deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -204,10 +181,12 @@
   0% {
     transform: translateY(0%) scale(0);
   }
+
   80% {
     transform: translateY(-100%) scale(1);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-100%) scale(1);
     opacity: 0;
@@ -218,15 +197,19 @@
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(20deg);
   }
+
   50% {
     transform: rotate(0deg);
   }
+
   75% {
     transform: rotate(-20deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -236,9 +219,11 @@
   0% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(180deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -248,15 +233,19 @@
   0% {
     transform: scale(1);
   }
+
   25% {
     transform: scale(1.15);
   }
+
   50% {
     transform: scale(1);
   }
+
   75% {
     transform: scale(0.85);
   }
+
   100% {
     transform: scale(1);
   }
@@ -266,15 +255,19 @@
   0% {
     transform: translateY(0);
   }
+
   25% {
     transform: rotate(5deg);
   }
+
   50% {
     transform: translateY(-0.1em);
   }
+
   75% {
     transform: rotate(-5deg);
   }
+
   100% {
     transform: translateY(0);
   }

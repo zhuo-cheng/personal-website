@@ -2,7 +2,7 @@ import React from "react";
 import githubIcon from "../assets/github.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import facebookIcon from "../assets/facebook.svg";
-import twitterIcon from "../assets/twitter.svg";
+import xIcon from "../assets/x.svg";
 import emailIcon from "../assets/email.svg";
 import "../styles/contact_links.css";
 
@@ -22,9 +22,9 @@ const ContactLinks = () => {
       icon: facebookIcon,
     },
     {
-      name: "Twitter",
+      name: "X",
       url: "https://twitter.com/zhuoch/",
-      icon: twitterIcon },
+      icon: xIcon },
     { 
       name: "Email",
       url: "mailto:joel.zhuo.cheng@gmail.com",
