@@ -75,7 +75,11 @@
 
 .company-highlight::after {
   top: 88%;
-  background: linear-gradient(to right, var(--company-highlight-color-l), var(--company-highlight-color-y));
+  background: linear-gradient(
+    to right,
+    var(--company-highlight-color-l),
+    var(--company-highlight-color-y)
+  );
 }
 
 .company-highlight:hover {

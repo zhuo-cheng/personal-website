@@ -8,9 +8,7 @@ import "../styles/contact_links.css";
 
 const ContactLinks = () => {
   const CONTACT_ITEMS = [
-    { name: "GitHub",
-      url: "https://github.com/zhuo-cheng/",
-      icon: githubIcon },
+    { name: "GitHub", url: "https://github.com/zhuo-cheng/", icon: githubIcon },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/zhuo-cheng/",
@@ -24,11 +22,13 @@ const ContactLinks = () => {
     {
       name: "X",
       url: "https://twitter.com/zhuoch/",
-      icon: xIcon },
-    { 
+      icon: xIcon,
+    },
+    {
       name: "Email",
       url: "mailto:joel.zhuo.cheng@gmail.com",
-      icon: emailIcon },
+      icon: emailIcon,
+    },
   ];
 
   return (
