@@ -6,7 +6,7 @@ const Introduction = () => {
   const ACTIVITIES = [
     {
       emoji: "🕹",
-      text: "play games",
+      text: "play video games",
       animationAttr: "game",
     },
     {
