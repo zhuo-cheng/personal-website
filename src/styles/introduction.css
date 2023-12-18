@@ -77,8 +77,8 @@
   top: 88%;
   background: linear-gradient(
     to right,
-    var(--company-highlight-color-l) 20%,
-    var(--company-highlight-color-y) 62%
+    var(--company-highlight-color-l) 25%,
+    var(--company-highlight-color-y) 75%
   );
 }
 
