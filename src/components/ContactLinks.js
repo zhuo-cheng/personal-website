@@ -3,6 +3,8 @@ import githubIcon from "../assets/github.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import facebookIcon from "../assets/facebook.svg";
 import xIcon from "../assets/x.svg";
+import instagramIcon from "../assets/instagram.svg";
+import zennIcon from "../assets/zenn.svg";
 import emailIcon from "../assets/email.svg";
 import "../styles/contact_links.css";
 
@@ -23,6 +25,16 @@ const ContactLinks = () => {
       name: "X",
       url: "https://twitter.com/zhuoch/",
       icon: xIcon,
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/zhuo.ch/",
+      icon: instagramIcon,
+    },
+    {
+      name: "Zenn",
+      url: "https://zenn.dev/zhuo_cheng",
+      icon: zennIcon,
     },
     {
       name: "Email",

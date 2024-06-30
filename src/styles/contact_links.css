@@ -6,7 +6,7 @@ ul.links {
 
 li.link {
   flex: 0 1 3em;
-  margin: 0 1em;
+  margin: 0 0.6em;
 }
 
 li.link a {
@@ -15,7 +15,7 @@ li.link a {
 }
 
 li.link img {
-  width: 2.2em;
+  width: 2em;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
@@ -35,4 +35,13 @@ li.link:hover img {
 
 li.link:hover span {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  li.link:hover img {
+    opacity: 1;
+  }
+  li.link:hover span {
+    opacity: 0;
+  }
 }

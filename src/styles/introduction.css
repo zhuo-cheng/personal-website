@@ -7,7 +7,12 @@
 }
 
 .homepage-img {
-  width: 20em;
+  width: 22em;
+}
+
+.img-description {
+  font-size: 0.7em;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 1000px) {
@@ -91,7 +96,7 @@
 }
 
 .activity {
-  margin: 3em 0 5em;
+  margin: 2em 0 3em;
 }
 
 .activity-hover-able {
@@ -131,9 +136,9 @@
   animation-duration: 1s;
 }
 
-.activity-hover-able:hover[data-animation="car"]::after {
-  animation-name: car-animation;
-  animation-duration: 1s;
+.activity-hover-able:hover[data-animation="plane"]::after {
+  animation-name: plane-animation;
+  animation-duration: 2.5s;
 }
 
 [data-emoji]::after {
@@ -255,24 +260,14 @@
   }
 }
 
-@keyframes car-animation {
+@keyframes plane-animation {
   0% {
-    transform: translateY(0);
+    transform: translate(0, 0) rotate(0deg);
   }
-
-  25% {
-    transform: rotate(5deg);
-  }
-
   50% {
-    transform: translateY(-0.1em);
+    transform: translate(10%, -10%) rotate(-5deg);
   }
-
-  75% {
-    transform: rotate(-5deg);
-  }
-
   100% {
-    transform: translateY(0);
+    transform: translate(20%, -20%) rotate(0deg);
   }
 }

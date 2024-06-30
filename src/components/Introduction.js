@@ -20,18 +20,18 @@ const Introduction = () => {
       animationAttr: "headphone",
     },
     {
-      emoji: "🚗",
-      text: "enjoy trips",
-      animationAttr: "car",
+      emoji: "✈️",
+      text: "enjoy traveling",
+      animationAttr: "plane",
     },
   ];
   const JOBS = [
     {
-      type: "Back-end",
+      type: "Backend",
       ratio: "70%",
     },
     {
-      type: "Front-end",
+      type: "Frontend",
       ratio: "15%",
     },
     {
@@ -50,6 +50,7 @@ const Introduction = () => {
   return (
     <div>
       <img className="homepage-img" src={homepageImage} alt="homepageImage" />
+      <p className="img-description">Jan 7, 2024 @ The Aomori Museum of Art</p>
       <h1>
         <span
           className={`waving-hand ${noHighFive ? "-no-high-five" : ""}`}
@@ -74,7 +75,7 @@ const Introduction = () => {
             {index === 0 && "Currently, "}
             {`${job.ratio} `}
             <span className="highlight text-highlight">{job.type}</span>
-            {index !== JOBS.length - 1 && " + "}
+            {index !== JOBS.length - 1 && " , "}
           </React.Fragment>
         ))}
       </p>
